@@ -1,6 +1,6 @@
 {
   "name": "rotation-css",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Returns the css needed to rotate an image based on it's exif data",
   "main": "dist/index.js",
   "module": "src/index.js",

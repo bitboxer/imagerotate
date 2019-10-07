@@ -7,10 +7,10 @@ const rotationCSS = imageBlob => {
   const css = exif2css(orientation);
 
   if (css.transform) {
-    return css.transform;
+    return {"transform": css.transform};
   }
   if (css["transform-origin"]) {
-    return css["transform-origin"];
+    return {"transform-origin": css["transform-origin"]};
   }
 
   return {};
