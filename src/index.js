@@ -6,14 +6,14 @@ const rotationCSS = imageBlob => {
   const orientation = exifOrientation(imageBlob);
   const css = exif2css(orientation);
 
-  if (css.transform) {
-    return {"transform": css.transform};
+  let style = {}
+  if (css["transform"]) {
+    style["transform"] = css["transform"];
   }
   if (css["transform-origin"]) {
-    return {"transform-origin": css["transform-origin"]};
+    style["transform-origin"] = css["transform-origin"];
   }
-
-  return {};
+  return style;
 };
 
 export default rotationCSS;
