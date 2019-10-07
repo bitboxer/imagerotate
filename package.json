@@ -1,10 +1,12 @@
 {
-  "name": "imagerotate",
-  "version": "0.1.0",
+  "name": "rotation-css",
+  "version": "0.2.0",
   "description": "Returns the css needed to rotate an image based on it's exif data",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/bitboxer/imagerotate/issues"
   },
-  "homepage": "https://github.com/bitboxer/imagerotate#readme"
+  "homepage": "https://github.com/bitboxer/imagerotate#readme",
+  "dependencies": {
+    "exif2css": "^1.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2"
+  }
 }
