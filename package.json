@@ -1,0 +1,22 @@
+{
+  "name": "imagerotate",
+  "version": "0.1.0",
+  "description": "Returns the css needed to rotate an image based on it's exif data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitboxer/imagerotate.git"
+  },
+  "keywords": [
+    "exif"
+  ],
+  "author": "Bodo Tasche (https://bitboxer.de/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bitboxer/imagerotate/issues"
+  },
+  "homepage": "https://github.com/bitboxer/imagerotate#readme"
+}
